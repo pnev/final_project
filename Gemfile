@@ -48,6 +48,7 @@ group :development do
 end
 
 gem 'redcarpet'
+gem 'jquery-turbolinks'
 
 group :production do
   gem 'rails_12factor'
