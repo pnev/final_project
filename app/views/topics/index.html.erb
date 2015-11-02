@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+<div class="rates">
+  <br></br>
+
+<h3 class="heading">STATE</h3>
+<h3>Find your tax bracket and marginal tax rate:</h3>
+<div class="field">
+  <label for="filing_status">Filing Status:</label>
+<select class="filing">
+<option value="Single">Single</option>
+<option value="MFJ">Married Filing Jointly</option>
+<option value="MFS">Married Filing Separately</option>
+<option value="HOH">Head of Household</option>
+</select>
+</div>
+<div class="field">
+  <label for="marginal_rate">Choose a State:</label>
+  <select class="rate">
+  <option value="NY">NY</option>
+  <option value="NJ">NJ</option>
+</select>
+</div>
+<input type="submit"class ="state">
+<br></br>
+<div class="result">
+</div>
+</div>
+<br></br>
+<h3 class="federal-heading">FEDERAL</h3>
+<br/>
+<table class="topic-container">
+<tbody>
+<% @topics.each do |topic| %>
+  <div class = "topic">
+    <a href= "topics/<%=topic.id%>"<%=link_to topic.name %></div>
+      <br></br>
+   </tr>
+  <%end%>
+ </tbody>
+</table>

@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+<br></br>
+<p>Please enter a valid email and password before continuing.</p>
+<h1>Login</h1>
+<form action="/login" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input type="text" name="email" placeholder="Email address">
+  <input type="password" name="password" placeholder="Password">
+  <input type="submit" name= "submit">
+</form>
+</body>

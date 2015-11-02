@@ -1,0 +1,24 @@
+<% if @topic.name.eql?("Affordable Care Act") %>
+  <%= render 'form_aca' %>
+
+  <% elsif @topic.name.eql?("Student Loan Interest") %>
+    <%= render 'form_student' %>
+
+  <% elsif @topic.name.eql?("Do I need to file?") %>
+        <%= render 'form_do_i_file' %>
+
+<%else%>
+<p id="notice"><%= notice %></p>
+<p>
+  <h3><%= @topic.name %><h3>
+  <%= markdown @topic.content %>
+</p>
+<% end %>
+<br></br>
+
+<footer class="footer">
+<%= link_to 'Edit', edit_topic_path(@topic) %> |
+<%= link_to 'Back', topics_path %> |
+<%= link_to 'Delete', @topic, method: :delete, data: { confirm: 'Are you sure?' } %> |
+<%= link_to 'New Topic', new_topic_path %>
+</footer>

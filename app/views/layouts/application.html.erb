@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TaxApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <nav>
+          <div class="nav navbar-nav navbar-left">
+          <h3><img src="/assets/tax-form.jpg" height="40" width="60">  TaxApp</h3>
+        </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Home", topics_path %></li>
+            <% if current_admin %>
+                <li><%=link_to 'Log Out', '/logout'%></li>
+              <% else %>
+              <li><%= link_to 'Login', '/login' %></li>
+              <% end %>
+            </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+
+<%= yield %>
+
+</body>
+</html>

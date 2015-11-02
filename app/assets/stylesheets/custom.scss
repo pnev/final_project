@@ -1,0 +1,87 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+.navbar .nav > h3 {
+   color: white;
+  font-weight: bold;
+}
+
+.navbar .nav > li > a {
+   padding: 20px 15px 10px;
+   color: white;
+   font-size: 1.25em;
+   font-weight: bold;
+}
+
+.topic {
+  background-color: blue;
+  border: solid black thin;
+  padding: 20px 10px 20px 10px;
+  width: 300px;
+  height: 60px;
+  text-align: center;
+  color: blue;
+  font-size: 20px;
+  align-self: center;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    text-align: left;
+    color: black;
+    font-size: 20px;
+}
+
+.navbar-nav, .navbar-inverse {
+  background-color: red;
+}
+
+.rates {
+  float: right;
+  margin-top: 20px;
+  margin-right:0;
+  width: 450px;
+  height: 200px;
+}
+
+.result {
+  border: solid black thin;
+  height: 50px;
+  width: 400px;
+  height: 150px;
+}
+
+.federal-heading {
+  margin-left: 50px;
+  font-weight: bold;
+align-content: center;
+}
+
+.heading {
+  font-weight: bold;
+  margin-top: 50px;
+}
