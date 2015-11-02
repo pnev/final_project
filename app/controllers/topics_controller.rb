@@ -52,8 +52,6 @@ class TopicsController < ApplicationController
     end
   end
 
-
-
   # DELETE /topics/1
   # DELETE /topics/1.json
   def destroy
